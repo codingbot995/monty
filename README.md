@@ -73,6 +73,25 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o monty
 ### Output
 This program successfully handles stacks and queues in C language
 
+### Functions
+This section is to explain the functions in the monty program
+
+PUSH - This will push a value to the stack or queue
+POP - This will pop(removes) a value from top of stack or bottom of queue
+PINT - This prints the top element in the stack or queue
+SWAP - This swaps the last two elements in the stack
+SUB - This carry out arithmetic operation on last two elements stack (subtraction)
+ROTR - Rotates stack from bottom to top
+ROTL - Rotates stack from top to bottom
+PSTR - Prints the ASCII value of the entire element of stack
+PCHAR - Prints the ASCII value of the top element of stack
+PALL - Prints all elements in stack
+MUL - Carries out arithmetic operation on last two elements of stack (multiplication)
+MOD - Carries out arithmetic operation on last two elements of stack (mod)
+DIV - Carries out arithmetic operation on last two elements of stack (division)
+ADD - Carries out arithmetic operation on last two elements of stack (addition)
+
+
 #### Usage
 ```$ cat bytecodes/07.m 
 push 1
@@ -122,6 +141,22 @@ $ ./monty bytecodes/00.m
 2
 1
 ```
+
+### Error Handling
+This program intelligently handles error in file '.m';
+only numbers allowed
+```
+$ cat -e bytecodes/001.m
+push 0
+push 2
+push 3hu
+pall
+
+$ ./monty bytecodes/00.m
+L3: usage: push integer
+```
+This prints the line where the error is and the opcode
+```L<line number> usage: <opcode> integer```
 
 ### Authors
 [Wiseman Umanah](https://github.com/wiseman-umanah)
