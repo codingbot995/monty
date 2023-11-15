@@ -33,7 +33,10 @@ int main(int argc, char *argv[])
 		char *opcode = strtok(line, " \t\n");
 
 		if (opcode == NULL || strcmp(opcode, "nop") == 0)
+		{
+			line_no++;
 			continue;
+		}
 		temp = handle_args(opcode);
 		if (temp < 0)
 			exit(EXIT_FAILURE);

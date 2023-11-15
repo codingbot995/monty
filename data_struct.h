@@ -42,7 +42,7 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-long int string_to_int(char *str_number);
+long int string_to_int(char *str_number, char *opcode);
 int handle_args(char *buffer);
 void free_alloc(stack_t *head);
 void add(stack_t **head, unsigned int line_number);

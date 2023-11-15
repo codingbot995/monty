@@ -30,7 +30,7 @@ int handle_args(char *opcode_str)
 		error_msg("usage: push integer");
 	else if (temp == NULL)
 		temp = "0";
-	number = string_to_int(temp);
+	number = string_to_int(temp, opcode_str);
 	for (i = 0; i < sizeof(opfunc) / sizeof(opfunc[0]); i++)
 	{
 		if (strcmp(opcode_str, opfunc[i].opcode) == 0)
