@@ -1,3 +1,2 @@
-push 1
-push 2
-subs
+push 97
+pchare

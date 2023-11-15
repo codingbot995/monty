@@ -30,8 +30,14 @@ int main(int argc, char *argv[])
 	}
 	while (fgets(line, sizeof(line), file) != NULL)
 	{
-		char *opcode = strtok(line, " \t\n");
+		char *opcode;
 
+		if (line[0] == '#' || line[0] == ' ')
+		{
+			line_no++;
+			continue;
+		}
+		opcode = strtok(line, " \t\n");
 		if (opcode == NULL || strcmp(opcode, "nop") == 0)
 		{
 			line_no++;
