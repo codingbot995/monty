@@ -12,7 +12,7 @@ int handle_args(char *opcode_str)
 		{"push", push}, {"pop", pop},
 		{"add", add}, {"div", handle_div},
 		{"mod", mod}, {"mul", mul},
-		{"pall", pall},
+		{"pall", pall}, {"pall$", pall},
 		{"pchar", pchar},
 		{"pint", pint},
 		{"pstr", pstr},
