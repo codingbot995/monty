@@ -18,7 +18,10 @@ void sub(stack_t **head, unsigned int line_number)
 	temp = current->next;
 	prev = current->n;
 	result = temp->n;
-	result -= prev;
+	if (result < prev)
+		result = prev - result;
+	else
+		result -= prev;
 	temp->n = result;
 	temp->prev = NULL;
 	*head = temp;
