@@ -90,6 +90,8 @@ This section is to explain the functions in the monty program
 - MOD - Carries out arithmetic operation on last two elements of stack (mod)
 - DIV - Carries out arithmetic operation on last two elements of stack (division)
 - ADD - Carries out arithmetic operation on last two elements of stack (addition)
+- STACK - Changes from queue back to stack
+- QUEUE - Changes from stack to queue
 
 
 #### Usage
