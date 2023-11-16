@@ -1,4 +1,4 @@
-#include "monty.h"
+#include "data_struct.h"
 
 /**
 * pint - prints the top element of stack

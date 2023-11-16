@@ -1,4 +1,4 @@
-#include "monty.h"
+#include "data_struct.h"
 
 /**
 * push - pushes element tot stack

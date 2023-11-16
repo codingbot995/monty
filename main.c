@@ -1,4 +1,4 @@
-#include "monty.h"
+#include "data_struct.h"
 
 stack_t *HEAD = NULL;
 static int line_no;
