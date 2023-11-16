@@ -16,7 +16,7 @@ void pall(stack_t **head, unsigned int line_number)
 		return;
 	while (current != NULL)
 	{
-		fprintf(stdout, "%u\n", (current)->n);
+		fprintf(stdout, "%u\n", current->n);
 		current = current->next;
 	}
 }
