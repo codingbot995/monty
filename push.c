@@ -42,7 +42,7 @@ void push(stack_t **head, unsigned int line_number)
 /**
 * push2 - pushes element to queue
 * @head: the head pointer to list
-* @line_number: the number to be pushed to stack
+* @n: the number to be pushed to stack
 */
 void push2(stack_t **head, const int n)
 {
