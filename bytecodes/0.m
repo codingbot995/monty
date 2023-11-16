@@ -21,6 +21,12 @@ push 12
 mul
 push 9
 mod
+push 0
 push 65
 pchar
+push 66
+push 67
+push 68
+pstr
+rotl
 pall

@@ -1,4 +1,4 @@
-#include "data_struct.h"
+#include "monty.h"
 
 /**
 * mul - multiplies the first two top elements

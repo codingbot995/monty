@@ -1,2 +1,3 @@
 push 98
-pchar
+rotl
+pall

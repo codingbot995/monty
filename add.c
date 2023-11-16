@@ -1,4 +1,4 @@
-#include "data_struct.h"
+#include "monty.h"
 
 /**
 * add - adds the first two top element of the stack

@@ -1,4 +1,4 @@
-#include "data_struct.h"
+#include "monty.h"
 
 /**
 * mod - finds the mod of the first two element of stack

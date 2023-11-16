@@ -1,4 +1,4 @@
-#include "data_struct.h"
+#include "monty.h"
 
 /**
 * swap - swaps first two elements of a stack

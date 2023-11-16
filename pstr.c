@@ -1,4 +1,4 @@
-#include "data_struct.h"
+#include "monty.h"
 
 /**
 * pstr - prints the ascii value of each element in stack
