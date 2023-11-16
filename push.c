@@ -1,4 +1,4 @@
-#include "data_struct.h"
+#include "monty.h"
 
 /**
 * push - pushes element tot stack
@@ -28,7 +28,7 @@ void push(stack_t **head, unsigned int line_number)
 	{
 		new_node->prev = NULL;
 		new_node->next = *head;
-		(*head)->prev = new_node;
+		current->prev = new_node;
 		*head = new_node;
 	}
 }
