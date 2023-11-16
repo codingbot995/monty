@@ -1,9 +1,13 @@
-pall
 push 1
-pall
 push 2
-pall
 push 3
 pall
 push 4
+push 5
+push 6
+pall
+add
+pall
+push 11111
+add
 pall

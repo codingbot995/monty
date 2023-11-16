@@ -1,3 +1,5 @@
 push 98
-rotl Holberton
+push 897
+pall
+queue Holberton
 pall

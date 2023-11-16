@@ -27,7 +27,7 @@ typedef struct stack_s
 } stack_t;
 
 extern stack_t *HEAD;
-
+extern int status;
 /**
 * struct instruction_s - opcode and its function
 * @opcode: the opcode
@@ -61,5 +61,6 @@ void sub(stack_t **head, unsigned int line_number);
 void swap(stack_t **head, unsigned int line_number);
 int number_line(void);
 void error_msg(char *str);
+void push2(stack_t **head, const int n);
 
 #endif /*DATA_STRUCT*/

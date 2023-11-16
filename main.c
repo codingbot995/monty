@@ -2,6 +2,7 @@
 
 stack_t *HEAD = NULL;
 static int line_no;
+int status = 0;
 
 /**
 * main - Entry point of all code
@@ -38,6 +39,18 @@ int main(int argc, char *argv[])
 			continue;
 		}
 		opcode = strtok(line, " \t\n");
+		if (strcmp(opcode, "queue") == 0)
+		{
+			line_no++;
+			status = 1;
+			continue;
+		}
+		if (strcmp(opcode, "stack") == 0)
+		{
+			line_no++;
+			status = 0;
+			continue;
+		}
 		if (opcode == NULL || strcmp(opcode, "nop") == 0)
 		{
 			line_no++;
